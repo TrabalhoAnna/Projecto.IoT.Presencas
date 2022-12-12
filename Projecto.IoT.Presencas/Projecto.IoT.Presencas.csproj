@@ -105,14 +105,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="account\api-keys.html" />
-    <Content Include="account\billing.html" />
-    <Content Include="account\logs.html" />
-    <Content Include="account\overview.html" />
-    <Content Include="account\referrals.html" />
-    <Content Include="account\security.html" />
-    <Content Include="account\settings.html" />
-    <Content Include="account\statements.html" />
     <Content Include="assets\css\style.bundle.css" />
     <Content Include="assets\css\style.bundle.rtl.css" />
     <Content Include="assets\css\style.dark.bundle.css" />
