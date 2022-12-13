@@ -291,395 +291,416 @@
                     <div class="post d-flex flex-column-fluid" id="kt_post">
                         <!--begin::Container-->
                         <div id="kt_content_container" class="container-xxl">
-                            <!--begin::Table-->
-                            <div class="card card-flush mt-6 mt-xl-9">
-                                <!--begin::Card header-->
-                                <div class="card-header mt-5">
-                                    <!--begin::Card title-->
-                                    <div class="card-title flex-column">
-                                        <h3 class="fw-bolder mb-1">PWDAM 1º Ano</h3>
-                                    </div>
-                                    <!--begin::Card title-->
-                                    <!--begin::Card toolbar-->
-                                    <div class="card-toolbar my-1">
-                                        <!--begin::Select-->
-                                        <div class="me-6 my-1">
-                                            <select id="kt_filter_year" name="year" data-control="select2" data-hide-search="true" class="w-125px form-select form-select-solid form-select-sm select2-hidden-accessible" data-select2-id="select2-data-kt_filter_year" tabindex="-1" aria-hidden="true">
-                                                <option value="All" selected="selected" data-select2-id="select2-data-44-et5r">All time</option>
-                                                <option value="thisyear">This year</option>
-                                                <option value="thismonth">This month</option>
-                                                <option value="lastmonth">Last month</option>
-                                                <option value="last90days">Last 90 days</option>
-                                            </select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-43-xxa7" style="width: 100%;">
-                                            <span class="selection">
-                                            <span class="select2-selection__arrow" role="presentation">
-                                                <b role="presentation"></b>
-                                                </span>
-                                                </span>
-                                                </span>
-                                            <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            <div>
+                                <!--begin::filtro-->
+                                <div class="card card-flush mt-6 mt-xl-9">
+                                    <!--begin::Card body-->
+                                    <div class="card-body pt-0">
+                                        <!--begin::filtro container-->
+                                        <div class="table-responsive">
+                                            <!--begin::filtro-->
+                                            <div id="kt_profile_overview_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
+                                                    </div>
+                                                </div>
+                                                <!--end::filtro-->
+                                            </div>
+                                            <!--end::filtro container-->
                                         </div>
-                                        <!--end::Select-->
-                                        <!--begin::Select-->
-                                        <div class="me-4 my-1">
-                                            <select id="kt_filter_orders" name="orders" data-control="select2" data-hide-search="true" class="w-125px form-select form-select-solid form-select-sm select2-hidden-accessible" data-select2-id="select2-data-kt_filter_orders" tabindex="-1" aria-hidden="true">
-                                                <option value="All" selected="selected" data-select2-id="select2-data-46-jeuh">All Orders</option>
-                                                <option value="Approved">Approved</option>
-                                                <option value="Declined">Declined</option>
-                                                <option value="In Progress">In Progress</option>
-                                                <option value="In Transit">In Transit</option>
-                                            </select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-45-zjsq" style="width: 100%;"><span class="selection"></span></span>
-                                        </div>
-                                        <!--end::Select-->
+                                        <!--end::Card body-->
                                     </div>
-                                    <!--begin::Card toolbar-->
+                                    <!--end::Card-->
                                 </div>
-                                <!--end::Card header-->
-                                <!--begin::Card body-->
-                                <div class="card-body pt-0">
-                                    <!--begin::Table container-->
-                                    <div class="table-responsive">
-                                        <!--begin::Table-->
-                                        <div id="kt_profile_overview_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                            <div class="table-responsive">
-                                                <table id="kt_profile_overview_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bolder dataTable no-footer">
-                                                    <!--begin::Head-->
-                                                    <thead class="fs-7 text-gray-400 text-uppercase">
-                                                        <tr>
-                                                        <th class="min-w-250px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Aluno: activate to sort column ascending" style="width: 410.925px;">Aluno</th>
-                                                        <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Data: activate to sort column ascending" style="width: 252.825px;">Data</th>
-                                                        <th class="min-w-90px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 168.3px;">Presença</th>
-                                                        <th class="min-w-50px text-end sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Details: activate to sort column ascending" style="width: 110.45px;">Justificativa</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <!--end::Head-->
-                                                    <!--begin::Body-->
-                                                    <tbody class="fs-6">
-                                                        <tr class="odd">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <img alt="Pic" src="assets/media/avatars/300-6.jpg">
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Emma Smith</a>
-                                                                        <div class="fw-bold text-gray-400">smith@kpmg.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-12-20T00:00:00+00:00">Dec 20, 2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-danger fw-bolder px-4 py-3">Rejected</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="even">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <span class="symbol-label bg-light-danger text-danger fw-bold">M</span>
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                        <!--begin::Online-->
-                                                                        <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                        <!--end::Online-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Melody Macy</a>
-                                                                        <div class="fw-bold text-gray-400">melody@altbox.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="odd">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <img alt="Pic" src="assets/media/avatars/300-1.jpg">
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Max Smith</a>
-                                                                        <div class="fw-bold text-gray-400">max@kt.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-06-24T00:00:00+01:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-success fw-bolder px-4 py-3">Approved</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="even">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <img alt="Pic" src="assets/media/avatars/300-5.jpg">
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Sean Bean</a>
-                                                                        <div class="fw-bold text-gray-400">sean@dellito.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="odd">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <img alt="Pic" src="assets/media/avatars/300-25.jpg">
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Brian Cox</a>
-                                                                        <div class="fw-bold text-gray-400">brian@exchange.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-08-19T00:00:00+01:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-info fw-bolder px-4 py-3">In progress</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="even">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <span class="symbol-label bg-light-warning text-warning fw-bold">C</span>
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                        <!--begin::Online-->
-                                                                        <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                        <!--end::Online-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Mikaela Collins</a>
-                                                                        <div class="fw-bold text-gray-400">mik@pex.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-05-05T00:00:00+01:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-danger fw-bolder px-4 py-3">Rejected</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="odd">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <img alt="Pic" src="assets/media/avatars/300-9.jpg">
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Francis Mitcham</a>
-                                                                        <div class="fw-bold text-gray-400">f.mit@kpmg.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-10-25T00:00:00+01:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-info fw-bolder px-4 py-3">In progress</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="even">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <span class="symbol-label bg-light-danger text-danger fw-bold">O</span>
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                        <!--begin::Online-->
-                                                                        <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                        <!--end::Online-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Olivia Wild</a>
-                                                                        <div class="fw-bold text-gray-400">olivia@corpmail.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-08-19T00:00:00+01:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="odd">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <span class="symbol-label bg-light-primary text-primary fw-bold">N</span>
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                        <!--begin::Online-->
-                                                                        <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                        <!--end::Online-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Neil Owen</a>
-                                                                        <div class="fw-bold text-gray-400">owen.neil@gmail.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-info fw-bolder px-4 py-3">In progress</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="even">
-                                                            <td>
-                                                                <!--begin::User-->
-                                                                <div class="d-flex align-items-center">
-                                                                    <!--begin::Wrapper-->
-                                                                    <div class="me-5 position-relative">
-                                                                        <!--begin::Avatar-->
-                                                                        <div class="symbol symbol-35px symbol-circle">
-                                                                            <img alt="Pic" src="assets/media/avatars/300-23.jpg">
-                                                                        </div>
-                                                                        <!--end::Avatar-->
-                                                                    </div>
-                                                                    <!--end::Wrapper-->
-                                                                    <!--begin::Info-->
-                                                                    <div class="d-flex flex-column justify-content-center">
-                                                                        <a href="" class="fs-6 text-gray-800 text-hover-primary">Dan Wilson</a>
-                                                                        <div class="fw-bold text-gray-400">dam@consilting.com</div>
-                                                                    </div>
-                                                                    <!--end::Info-->
-                                                                </div>
-                                                                <!--end::User-->
-                                                            </td>
-                                                            <td data-order="2022-05-05T00:00:00+01:00">12/12/2022</td>
-                                                            <td>
-                                                                <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
-                                                            </td>
-                                                            <td class="text-end">
-                                                                <a href="#" class="btn btn-light btn-sm">View</a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <!--end::Body-->
-                                                </table>
-                                            </div><div class="row"><div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"><div class="dataTables_length" id="kt_profile_overview_table_length"><label><select name="kt_profile_overview_table_length" aria-controls="kt_profile_overview_table" class="form-select form-select-sm form-select-solid"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div><div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end"><div class="dataTables_paginate paging_simple_numbers" id="kt_profile_overview_table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="kt_profile_overview_table_previous"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="kt_profile_overview_table_next"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li></ul></div></div></div>
+                                <!--begin::Table-->
+                                <div class="card card-flush mt-6 mt-xl-9">
+                                    <!--begin::Card header-->
+                                    <div class="card-header mt-5">
+                                        <!--begin::Card title-->
+                                        <div class="card-title flex-column">
+                                            <h3 class="fw-bolder mb-1">PWDAM 1º Ano</h3>
                                         </div>
-                                        <!--end::Table-->
+                                        <!--begin::Card title-->
+                                        <!--begin::Card toolbar-->
+                                        <div class="card-toolbar my-1">
+                                            <!--begin::Select-->
+                                            <div class="me-6 my-1">
+                                                <select id="kt_filter_year" name="year" data-control="select2" data-hide-search="true" class="w-125px form-select form-select-solid form-select-sm select2-hidden-accessible" data-select2-id="select2-data-kt_filter_year" tabindex="-1" aria-hidden="true">
+                                                    <option value="All" selected="selected" data-select2-id="select2-data-44-et5r">All time</option>
+                                                    <option value="thisyear">This year</option>
+                                                    <option value="thismonth">This month</option>
+                                                    <option value="lastmonth">Last month</option>
+                                                    <option value="last90days">Last 90 days</option>
+                                                </select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-43-xxa7" style="width: 100%;">
+                                                    <span class="selection">
+                                                        <span class="select2-selection__arrow" role="presentation">
+                                                            <b role="presentation"></b>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                            </div>
+                                            <!--end::Select-->
+                                            <!--begin::Select-->
+                                            <div class="me-4 my-1">
+                                                <select id="kt_filter_orders" name="orders" data-control="select2" data-hide-search="true" class="w-125px form-select form-select-solid form-select-sm select2-hidden-accessible" data-select2-id="select2-data-kt_filter_orders" tabindex="-1" aria-hidden="true">
+                                                    <option value="All" selected="selected" data-select2-id="select2-data-46-jeuh">All Orders</option>
+                                                    <option value="Approved">Approved</option>
+                                                    <option value="Declined">Declined</option>
+                                                    <option value="In Progress">In Progress</option>
+                                                    <option value="In Transit">In Transit</option>
+                                                </select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-45-zjsq" style="width: 100%;"><span class="selection"></span></span>
+                                            </div>
+                                            <!--end::Select-->
+                                        </div>
+                                        <!--begin::Card toolbar-->
                                     </div>
-                                    <!--end::Table container-->
+                                    <!--end::Card header-->
+                                    <!--begin::Card body-->
+                                    <div class="card-body pt-0">
+                                        <!--begin::Table container-->
+                                        <div class="table-responsive">
+                                            <!--begin::Table-->
+                                            <div id="kt_profile_overview_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                                <div class="table-responsive">
+                                                    <table id="kt_profile_overview_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bolder dataTable no-footer">
+                                                        <!--begin::Head-->
+                                                        <thead class="fs-7 text-gray-400 text-uppercase">
+                                                            <tr>
+                                                                <th class="min-w-250px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Aluno: activate to sort column ascending" style="width: 410.925px;">Aluno</th>
+                                                                <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Data: activate to sort column ascending" style="width: 252.825px;">Data</th>
+                                                                <th class="min-w-90px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 168.3px;">Presença</th>
+                                                                <th class="min-w-50px text-end sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Details: activate to sort column ascending" style="width: 110.45px;">Justificativa</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <!--end::Head-->
+                                                        <!--begin::Body-->
+                                                        <tbody class="fs-6">
+                                                            <tr class="odd">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <img alt="Pic" src="assets/media/avatars/300-6.jpg">
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Emma Smith</a>
+                                                                            <div class="fw-bold text-gray-400">smith@kpmg.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-12-20T00:00:00+00:00">Dec 20, 2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-danger fw-bolder px-4 py-3">Rejected</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <span class="symbol-label bg-light-danger text-danger fw-bold">M</span>
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                            <!--begin::Online-->
+                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                            <!--end::Online-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Melody Macy</a>
+                                                                            <div class="fw-bold text-gray-400">melody@altbox.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <img alt="Pic" src="assets/media/avatars/300-1.jpg">
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Max Smith</a>
+                                                                            <div class="fw-bold text-gray-400">max@kt.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-06-24T00:00:00+01:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-success fw-bolder px-4 py-3">Approved</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <img alt="Pic" src="assets/media/avatars/300-5.jpg">
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Sean Bean</a>
+                                                                            <div class="fw-bold text-gray-400">sean@dellito.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <img alt="Pic" src="assets/media/avatars/300-25.jpg">
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Brian Cox</a>
+                                                                            <div class="fw-bold text-gray-400">brian@exchange.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-08-19T00:00:00+01:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-info fw-bolder px-4 py-3">In progress</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <span class="symbol-label bg-light-warning text-warning fw-bold">C</span>
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                            <!--begin::Online-->
+                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                            <!--end::Online-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Mikaela Collins</a>
+                                                                            <div class="fw-bold text-gray-400">mik@pex.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-05-05T00:00:00+01:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-danger fw-bolder px-4 py-3">Rejected</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <img alt="Pic" src="assets/media/avatars/300-9.jpg">
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Francis Mitcham</a>
+                                                                            <div class="fw-bold text-gray-400">f.mit@kpmg.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-10-25T00:00:00+01:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-info fw-bolder px-4 py-3">In progress</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <span class="symbol-label bg-light-danger text-danger fw-bold">O</span>
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                            <!--begin::Online-->
+                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                            <!--end::Online-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Olivia Wild</a>
+                                                                            <div class="fw-bold text-gray-400">olivia@corpmail.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-08-19T00:00:00+01:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <span class="symbol-label bg-light-primary text-primary fw-bold">N</span>
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                            <!--begin::Online-->
+                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                            <!--end::Online-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Neil Owen</a>
+                                                                            <div class="fw-bold text-gray-400">owen.neil@gmail.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-info fw-bolder px-4 py-3">In progress</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even">
+                                                                <td>
+                                                                    <!--begin::User-->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <!--begin::Wrapper-->
+                                                                        <div class="me-5 position-relative">
+                                                                            <!--begin::Avatar-->
+                                                                            <div class="symbol symbol-35px symbol-circle">
+                                                                                <img alt="Pic" src="assets/media/avatars/300-23.jpg">
+                                                                            </div>
+                                                                            <!--end::Avatar-->
+                                                                        </div>
+                                                                        <!--end::Wrapper-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Dan Wilson</a>
+                                                                            <div class="fw-bold text-gray-400">dam@consilting.com</div>
+                                                                        </div>
+                                                                        <!--end::Info-->
+                                                                    </div>
+                                                                    <!--end::User-->
+                                                                </td>
+                                                                <td data-order="2022-05-05T00:00:00+01:00">12/12/2022</td>
+                                                                <td>
+                                                                    <span class="badge badge-light-warning fw-bolder px-4 py-3">Pending</span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <!--end::Body-->
+                                                    </table>
+                                                </div><div class="row"><div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"><div class="dataTables_length" id="kt_profile_overview_table_length"><label><select name="kt_profile_overview_table_length" aria-controls="kt_profile_overview_table" class="form-select form-select-sm form-select-solid"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div><div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end"><div class="dataTables_paginate paging_simple_numbers" id="kt_profile_overview_table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="kt_profile_overview_table_previous"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="kt_profile_overview_table_next"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li></ul></div></div></div>
+                                            </div>
+                                            <!--end::Table-->
+                                        </div>
+                                        <!--end::Table container-->
+                                    </div>
+                                    <!--end::Card body-->
                                 </div>
-                                <!--end::Card body-->
+                                <!--end::Card-->
                             </div>
-                            <!--end::Card-->
-                        </div>
                         <!--end::Container-->
                     </div>
                     <!--end::Post-->
