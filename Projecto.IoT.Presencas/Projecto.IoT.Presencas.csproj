@@ -109,6 +109,7 @@
     <Content Include="assets\css\style.bundle.rtl.css" />
     <Content Include="assets\css\style.dark.bundle.css" />
     <Content Include="assets\css\style.dark.bundle.rtl.css" />
+    <Content Include="assets\css\styleAnna.css" />
     <Content Include="assets\js\custom\account\api-keys\api-keys.js" />
     <Content Include="assets\js\custom\account\orders\classic.js" />
     <Content Include="assets\js\custom\account\referrals\referral-program.js" />
@@ -331,6 +332,7 @@
     <Content Include="assets\js\custom\utilities\modals\users-search.js" />
     <Content Include="assets\js\custom\utilities\search\horizontal.js" />
     <Content Include="assets\js\custom\widgets.js" />
+    <Content Include="assets\js\scriptAnna.js" />
     <Content Include="assets\js\scripts.bundle.js" />
     <Content Include="assets\js\widgets.bundle.js" />
     <Content Include="assets\media\avatars\300-1.jpg" />
