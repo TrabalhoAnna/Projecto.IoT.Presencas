@@ -106,3 +106,33 @@ function Dispselect(Select) {
 
     dispSelecAnterior = Select.textContent;
 }
+
+var dispSelecAnteriorP;
+function DispselectP(Select) {
+
+    var disp = document.querySelectorAll('[id=DisciplinaP]');
+    var dispS = document.getElementsByClassName('DispSelectP');
+    var DiscpTab = document.getElementById(Select.textContent);
+    var DiscpTabAnterior = document.getElementById(dispSelecAnteriorP);
+    if (dispS.length === 0) {
+        Select.className = "DispSelectP";
+        DiscpTab.style.display = "block";
+    }
+    else {
+        dispS[0].className = "DispP";
+        DiscpTabAnterior.style.display = "none";
+        for (var i = 0; i < disp.length; i++) {
+            if (disp[i] === Select) {
+                disp[i].className = "DispSelectP";
+                DiscpTab.style.display = "block";
+            }
+            else {
+                disp[i].className = "DispP";
+            }
+
+        }
+
+    }
+
+    dispSelecAnteriorP = Select.textContent;
+}

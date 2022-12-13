@@ -17,6 +17,7 @@
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/styleAnna.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
@@ -113,7 +114,7 @@
                     </div>
                     <!--end::Aside Menu-->
                 </div>
-                <!--end::Aside menu-->                
+                <!--end::Aside menu-->
             </div>
             <!--end::Aside-->
             <!--begin::Wrapper-->
@@ -234,14 +235,29 @@
                             <!--begin::filtro-->
                             <div class="row">
                                 <div class="card card-flush mt-6 mt-xl-9">
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">Matemática</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">Português</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">Programação</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
                                     <!--begin::Card body-->
                                     <div class="card-body pt-0">
+
                                         <!--begin::filtro container-->
                                         <div class="table-responsive">
                                             <!--begin::filtro-->
                                             <div id="kt_profile_overview_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                                                 <div class="row">
+
                                                     <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
+
                                                     </div>
                                                 </div>
                                                 <!--end::filtro-->
@@ -508,6 +524,7 @@
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="assets/plugins/global/plugins.bundle.js"></script>
     <script src="assets/js/scripts.bundle.js"></script>
+    <script src="assets/js/scriptAnna.js"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Page Vendors Javascript(used by this page)-->
     <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
