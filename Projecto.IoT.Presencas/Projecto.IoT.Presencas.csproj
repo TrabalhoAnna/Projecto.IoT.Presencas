@@ -1058,6 +1058,7 @@
     <Content Include="assets\plugins\global\plugins.dark.bundle.css" />
     <Content Include="assets\plugins\global\plugins.dark.bundle.rtl.css" />
     <Content Include="favicon.ico" />
+    <Content Include="login.html" />
     <Content Include="Vista.Alunos.html" />
     <Content Include="Registos.Coordenador.html" />
     <Content Include="Registos.Professor.html" />
