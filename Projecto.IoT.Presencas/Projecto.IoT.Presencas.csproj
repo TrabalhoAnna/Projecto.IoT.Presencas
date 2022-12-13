@@ -893,6 +893,7 @@
     <Content Include="assets\media\illustrations\unitedpalms-1\8.png" />
     <Content Include="assets\media\illustrations\unitedpalms-1\9-dark.png" />
     <Content Include="assets\media\illustrations\unitedpalms-1\9.png" />
+    <Content Include="assets\media\Logo.jpg" />
     <Content Include="assets\media\logos\favicon.ico" />
     <Content Include="assets\media\logos\logo-1-dark.svg" />
     <Content Include="assets\media\logos\logo-1.svg" />
