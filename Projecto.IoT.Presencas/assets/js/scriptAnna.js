@@ -77,6 +77,9 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+
+//apresentação da disciplina seleciona no Aluno
 var dispSelecAnterior;
 function Dispselect(Select) {
 
@@ -84,6 +87,7 @@ function Dispselect(Select) {
     var dispS = document.getElementsByClassName('DispSelect');
     var DiscpTab = document.getElementById(Select.textContent);
     var DiscpTabAnterior = document.getElementById(dispSelecAnterior);
+
     if (dispS.length === 0) {
         Select.className = "DispSelect";
         DiscpTab.style.display = "block";
@@ -91,6 +95,7 @@ function Dispselect(Select) {
     else {
         dispS[0].className = "Disp";
         DiscpTabAnterior.style.display = "none";
+
         for (var i = 0; i < disp.length; i++) {
             if (disp[i] === Select) {
                 disp[i].className = "DispSelect";
@@ -107,33 +112,33 @@ function Dispselect(Select) {
     dispSelecAnterior = Select.textContent;
 }
 
-var dispSelecAnteriorP;
-function DispselectP(Select,Section) {
 
-    var disp = document.querySelectorAll('[id=DisciplinaP]');
-    var dispS = document.getElementsByClassName('DispSelectP');
-    var DiscpTab = document.getElementById(Select.children[0].textContent);
-    var DiscpTabAnterior = document.getElementById(dispSelecAnteriorP);
-    if (dispS.length === 0) {
-        Select.className = "DispSelectP";
-        DiscpTab.style.display = "block";
-        Section.style.display = "none";
-    }
-    else {
-        dispS[0].className = "DispP";
-        for (var i = 0; i < disp.length; i++) {
-            if (disp[i] === Select) {
-                disp[i].className = "DispSelectP";
-                DiscpTab.style.display = "block";
-                Section.style.display = "none";
-            }
-            else {
-                disp[i].className = "DispP";
-            }
 
-        }
+//var dispSelecAnteriorP;
+//function DispselectP(Select,Section) {
 
-    }
+//    var disp = document.querySelectorAll('[id=DisciplinaP]');
+//    var dispS = document.getElementsByClassName('DispSelectP');
+//    var DiscpTab = document.getElementById(Select.children[0].textContent);
+//    var DiscpTabAnterior = document.getElementById(dispSelecAnteriorP);
 
-    dispSelecAnteriorP = Select.textContent;
-}
+//    if (dispS.length === 0) {
+//        Select.className = "DispSelectP";
+//        DiscpTab.style.display = "block";
+//        Section.style.display = "none";
+//    }
+//    else {
+//        dispS[0].className = "DispP";
+//        for (var i = 0; i < disp.length; i++) {
+//            if (disp[i] === Select) {
+//                disp[i].className = "DispSelectP";
+//                DiscpTab.style.display = "block";
+//                Section.style.display = "none";
+//            }
+//            else {
+//                disp[i].className = "DispP";
+//            }
+//        }
+//    }
+//    dispSelecAnteriorP = Select.textContent;
+//}
