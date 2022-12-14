@@ -232,42 +232,81 @@
                     <div class="post d-flex flex-column-fluid" id="kt_post">
                         <!--begin::Container-->
                         <div id="kt_content_container" class="container-xxl">
-                            <!--begin::filtro-->
-                            <div class="row">
-                                <div class="card card-flush mt-6 mt-xl-9">
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">Matemática</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">Português</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                            <div class="card card-flush mt-6 mt-xl-9">
+                                <!--Curso-->
+                                <div id="Escolariedade">
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this,this.parentElement)">
                                         <div style="width: 50%;">Programação</div>
                                         <div style="width: 50%;text-align: right;">></div>
                                     </div>
-                                    <!--begin::Card body-->
-                                    <div class="card-body pt-0">
-
-                                        <!--begin::filtro container-->
-                                        <div class="table-responsive">
-                                            <!--begin::filtro-->
-                                            <div id="kt_profile_overview_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                                <div class="row">
-
-                                                    <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
-
-                                                    </div>
-                                                </div>
-                                                <!--end::filtro-->
-                                            </div>
-                                            <!--end::filtro container-->
-                                        </div>
-                                        <!--end::Card body-->
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this,this.parentElement)">
+                                        <div style="width: 50%;">Ciências</div>
+                                        <div style="width: 50%;text-align: right;">></div>
                                     </div>
-                                    <!--end::Card-->
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this,this.parentElement)">
+                                        <div style="width: 50%;">Mecatronica</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
                                 </div>
+
+                                <!--Turma-->
+                                <div id="Programação" style="display:none">
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">1</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">2</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">3</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                </div>
+                                <div id="Ciências" style="display:none">
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">1</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">2</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">3</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                </div>
+                                <div id="Mecatronica" style="display:none">
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">1</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">2</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+                                        <div style="width: 50%;">3</div>
+                                        <div style="width: 50%;text-align: right;">></div>
+                                    </div>
+                                </div>
+
+                                <!--Turma
+    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+        <div style="width: 50%;">Matemática</div>
+        <div style="width: 50%;text-align: right;">></div>
+    </div>
+    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+        <div style="width: 50%;">Português</div>
+        <div style="width: 50%;text-align: right;">></div>
+    </div>
+    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
+        <div style="width: 50%;">Programação</div>
+        <div style="width: 50%;text-align: right;">></div>
+    </div>-->
+
                             </div>
                             <div>
                                 <!--begin::Table-->
