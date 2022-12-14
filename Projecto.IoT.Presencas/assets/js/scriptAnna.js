@@ -2,6 +2,11 @@
     document.getElementById("btncancelaruser").style.display = "block";
     document.getElementById("btnsalvaruser").style.display = "block";
     document.getElementById("editaruser").style.display = "none";
+    document.getElementById("nomeuserid").disabled = false;
+    document.getElementById("emailuserid").disabled = false;
+    document.getElementById("moradauserid").disabled = false;
+    document.getElementById("localidadeuserid").disabled = false;
+    document.getElementById("cpuserid").disabled = false;
 }
 
 function SalvarEdicao() {
@@ -14,6 +19,12 @@ function CancelarEdicao() {
     document.getElementById("btncancelaruser").style.display = "none";
     document.getElementById("btnsalvaruser").style.display = "none";
     document.getElementById("editaruser").style.display = "block";
+    document.getElementById("editaruser").style.display = "none";
+    document.getElementById("nomeuserid").disabled = true;
+    document.getElementById("emailuserid").disabled = true;
+    document.getElementById("moradauserid").disabled = true;
+    document.getElementById("localidadeuserid").disabled = true;
+    document.getElementById("cpuserid").disabled = true;
 }
 
 
