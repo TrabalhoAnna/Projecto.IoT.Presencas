@@ -231,304 +231,429 @@
                     <!--begin::Post-->
                     <div class="post d-flex flex-column-fluid" id="kt_post">
                         <!--begin::Container-->
-                        <div id="kt_content_container" class="container-xxl">
-                            <div class="card card-flush mt-6 mt-xl-9">
-                                <!--Curso-->
-                                <div id="Escolariedade">
-                                    <h1>Cursos</h1>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this,this.parentElement)">
-                                        <div style="width: 50%;">Programação</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this,this.parentElement)">
-                                        <div style="width: 50%;">Ciências</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this,this.parentElement)">
-                                        <div style="width: 50%;">Mecatronica</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                </div>
-
-                                <!--Turma-->
-                                <div id="Programação" style="display:none">
-
-                                    <h1>Turma Programação</h1>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">1</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">2</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">3</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                </div>
-                                <div id="Ciências" style="display:none">
-
-                                    <h1>Turma Ciências</h1>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">1</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">2</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">3</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                </div>
-                                <div id="Mecatronica" style="display:none">
-
-                                    <h1>Turma Mecatronica</h1>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">1</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">2</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-                                        <div style="width: 50%;">3</div>
-                                        <div style="width: 50%;text-align: right;">></div>
-                                    </div>
-                                </div>
-
-                                <!--Turma
-    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-        <div style="width: 50%;">Matemática</div>
-        <div style="width: 50%;text-align: right;">></div>
-    </div>
-    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-        <div style="width: 50%;">Português</div>
-        <div style="width: 50%;text-align: right;">></div>
-    </div>
-    <div id="DisciplinaP" class="DispP" onclick="DispselectP(this)">
-        <div style="width: 50%;">Programação</div>
-        <div style="width: 50%;text-align: right;">></div>
-    </div>-->
-
-                            </div>
-                            <div>
-                                <!--begin::Table-->
-                                <div class="card card-flush mt-6 mt-xl-9">
-                                    <!--begin::Card header-->
-                                    <div class="card-header mt-5">
-                                        <!--begin::Card title-->
-                                        <div class="card-title flex-column">
-                                            <h3 class="fw-bolder mb-1">PWDAM 1º Ano</h3>
-                                        </div>
-                                        <!--begin::Card title-->
-                                        <!--begin::Card toolbar-->
-                                        <div class="card-toolbar my-1">
-                                            <!--begin::Select-->
-                                            <div class="me-6 my-1">
-                                                <select id="kt_filter_year" name="year" data-control="select2" data-hide-search="true" class="w-125px form-select form-select-solid form-select-sm select2-hidden-accessible" data-select2-id="select2-data-kt_filter_year" tabindex="-1" aria-hidden="true">
-                                                    <option value="All" selected="selected" data-select2-id="select2-data-44-et5r">All time</option>
-                                                    <option value="thisyear">This year</option>
-                                                    <option value="thismonth">This month</option>
-                                                    <option value="lastmonth">Last month</option>
-                                                    <option value="last90days">Last 90 days</option>
-                                                </select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-43-xxa7" style="width: 100%;">
-                                                    <span class="selection">
-                                                        <span class="select2-selection__arrow" role="presentation">
-                                                            <b role="presentation"></b>
+                        <div id="kt_content_container" class="container-xxl" >
+                            <!--begin::Row-->
+                            <div class="row g-5 g-xl-8">
+                                <!--begin::Col-->
+                                <div class="row g-5 g-xl-8">
+                                    <div class="col-xl-4">
+                                        <!--begin::List Widget 4-->
+                                        <div class="card card-xl-stretch mb-xl-8">
+                                            <!--begin::Header-->
+                                            <div class="card-header border-0 pt-5">
+                                                <h3 class="card-title align-items-start flex-column">
+                                                    <span class="card-label fw-bolder text-dark">Trends</span>
+                                                </h3>
+                                            </div>
+                                            <!--end::Header-->
+                                            <!--begin::Body-->
+                                            <div class="card-body pt-5">
+                                                <!--begin::Item-->
+                                                <div class="d-flex align-items-sm-center mb-7">
+                                                    <!--begin::Symbol-->
+                                                    <div class="symbol symbol-50px me-5">
+                                                        <span class="symbol-label">
+                                                            <img src="assets/media/svg/brand-logos/plurk.svg" class="h-50 align-self-center" alt="">
                                                         </span>
+                                                    </div>
+                                                    <!--end::Symbol-->
+                                                    <!--begin::Section-->
+                                                    <div class="d-flex align-items-center flex-row-fluid flex-wrap">
+                                                        <div class="flex-grow-1 me-2">
+                                                            <a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bolder">Top Authors</a>
+                                                            <span class="text-muted fw-bold d-block fs-7">Mark, Rowling, Esther</span>
+                                                        </div>
+                                                        <span class="badge badge-light fw-bolder my-2">+82$</span>
+                                                    </div>
+                                                    <!--end::Section-->
+                                                </div>
+                                                <!--end::Item-->
+                                            </div>
+                                            <!--end::Body-->
+                                        </div>
+                                        <!--end::List Widget 4-->
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <!--begin::List Widget 6-->
+                                        <div class="card card-xl-stretch mb-5 mb-xl-8">
+                                            <!--begin::Header-->
+                                            <div class="card-header border-0">
+                                                <h3 class="card-title fw-bolder text-dark">Notifications</h3>                                                
+                                            </div>
+                                            <!--end::Header-->
+                                            <!--begin::Body-->
+                                            <div class="card-body pt-0">
+                                                <!--begin::Item-->
+                                                <div class="d-flex align-items-center bg-light-warning rounded p-5 mb-7">
+                                                    <!--begin::Icon-->
+                                                    <span class="svg-icon svg-icon-warning me-5">
+                                                        <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                                                        <span class="svg-icon svg-icon-1">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="currentColor"></path>
+                                                                <path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="currentColor"></path>
+                                                            </svg>
+                                                        </span>
+                                                        <!--end::Svg Icon-->
                                                     </span>
-                                                </span>
-                                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                                    <!--end::Icon-->
+                                                    <!--begin::Title-->
+                                                    <div class="flex-grow-1 me-2">
+                                                        <a href="#" class="fw-bolder text-gray-800 text-hover-primary fs-6">Group lunch celebration</a>
+                                                        <span class="text-muted fw-bold d-block">Due in 2 Days</span>
+                                                    </div>
+                                                    <!--end::Title-->
+                                                    <!--begin::Lable-->
+                                                    <span class="fw-bolder text-warning py-1">+28%</span>
+                                                    <!--end::Lable-->
+                                                </div>
+                                                <!--end::Item-->
                                             </div>
-                                            <!--end::Select-->
-                                            <!--begin::Select-->
-                                            <div class="me-4 my-1">
-                                                <select id="kt_filter_orders" name="orders" data-control="select2" data-hide-search="true" class="w-125px form-select form-select-solid form-select-sm select2-hidden-accessible" data-select2-id="select2-data-kt_filter_orders" tabindex="-1" aria-hidden="true">
-                                                    <option value="All" selected="selected" data-select2-id="select2-data-46-jeuh">All Orders</option>
-                                                    <option value="Approved">Approved</option>
-                                                    <option value="Declined">Declined</option>
-                                                    <option value="In Progress">In Progress</option>
-                                                    <option value="In Transit">In Transit</option>
-                                                </select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-45-zjsq" style="width: 100%;"><span class="selection"></span></span>
-                                            </div>
-                                            <!--end::Select-->
+                                            <!--end::Body-->
                                         </div>
-                                        <!--begin::Card toolbar-->
+                                        <!--end::List Widget 6-->
                                     </div>
-                                    <!--end::Card header-->
-                                    <!--begin::Card body-->
-                                    <div class="card-body pt-0">
-                                        <!--begin::Table container-->
-                                        <div class="table-responsive">
-                                            <!--begin::Table-->
-                                            <div id="kt_profile_overview_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                                <div class="table-responsive">
-                                                    <table id="kt_profile_overview_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bolder dataTable no-footer">
-                                                        <!--begin::Head-->
-                                                        <thead class="fs-7 text-gray-400 text-uppercase">
-                                                            <tr>
-                                                                <th class="min-w-250px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Aluno: activate to sort column ascending" style="width: 410.925px;">Aluno</th>
-                                                                <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Data: activate to sort column ascending" style="width: 252.825px;">Data</th>
-                                                                <th class="min-w-90px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 168.3px;">Presença</th>
-                                                                <th class="min-w-50px text-end sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Details: activate to sort column ascending" style="width: 110.45px;">Justificativa</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <!--end::Head-->
-                                                        <!--begin::Body-->
-                                                        <tbody class="fs-6">
-                                                            <tr class="even">
-                                                                <td>
-                                                                    <!--begin::User-->
-                                                                    <div class="d-flex align-items-center">
-                                                                        <!--begin::Wrapper-->
-                                                                        <div class="me-5 position-relative">
-                                                                            <!--begin::Avatar-->
-                                                                            <div class="symbol symbol-35px symbol-circle">
-                                                                                <span class="symbol-label bg-light-danger text-danger fw-bold">A</span>
-                                                                            </div>
-                                                                            <!--end::Avatar-->
-                                                                            <!--begin::Online-->
-                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                            <!--end::Online-->
-                                                                        </div>
-                                                                        <!--end::Wrapper-->
-                                                                        <!--begin::Info-->
-                                                                        <div class="d-flex flex-column justify-content-center">
-                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Anna Almada</a>
-                                                                            <div class="fw-bold text-gray-400">202200746</div>
-                                                                        </div>
-                                                                        <!--end::Info-->
-                                                                    </div>
-                                                                    <!--end::User-->
-                                                                </td>
-                                                                <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
-                                                                <td>
-                                                                    <span class="badge badge-light-success fw-bolder px-4 py-3">Presente</span>
-                                                                </td>
-                                                                <td class="text-end">
-                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="even">
-                                                                <td>
-                                                                    <!--begin::User-->
-                                                                    <div class="d-flex align-items-center">
-                                                                        <!--begin::Wrapper-->
-                                                                        <div class="me-5 position-relative">
-                                                                            <!--begin::Avatar-->
-                                                                            <div class="symbol symbol-35px symbol-circle">
-                                                                                <span class="symbol-label bg-light-warning text-warning fw-bold">J</span>
-                                                                            </div>
-                                                                            <!--end::Avatar-->
-                                                                            <!--begin::Online-->
-                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                            <!--end::Online-->
-                                                                        </div>
-                                                                        <!--end::Wrapper-->
-                                                                        <!--begin::Info-->
-                                                                        <div class="d-flex flex-column justify-content-center">
-                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">João Barbas</a>
-                                                                            <div class="fw-bold text-gray-400">202200755</div>
-                                                                        </div>
-                                                                        <!--end::Info-->
-                                                                    </div>
-                                                                    <!--end::User-->
-                                                                </td>
-                                                                <td data-order="2022-05-05T00:00:00+01:00">12/12/2022</td>
-                                                                <td>
-                                                                    <span class="badge badge-light-danger fw-bolder px-4 py-3">Falta</span>
-                                                                </td>
-                                                                <td class="text-end">
-                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="even">
-                                                                <td>
-                                                                    <!--begin::User-->
-                                                                    <div class="d-flex align-items-center">
-                                                                        <!--begin::Wrapper-->
-                                                                        <div class="me-5 position-relative">
-                                                                            <!--begin::Avatar-->
-                                                                            <div class="symbol symbol-35px symbol-circle">
-                                                                                <span class="symbol-label bg-light-danger text-danger fw-bold">D</span>
-                                                                            </div>
-                                                                            <!--end::Avatar-->
-                                                                            <!--begin::Online-->
-                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                            <!--end::Online-->
-                                                                        </div>
-                                                                        <!--end::Wrapper-->
-                                                                        <!--begin::Info-->
-                                                                        <div class="d-flex flex-column justify-content-center">
-                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Denis Afanasii</a>
-                                                                            <div class="fw-bold text-gray-400">202200750</div>
-                                                                        </div>
-                                                                        <!--end::Info-->
-                                                                    </div>
-                                                                    <!--end::User-->
-                                                                </td>
-                                                                <td data-order="2022-08-19T00:00:00+01:00">12/12/2022</td>
-                                                                <td>
-                                                                    <span class="badge badge-light-success fw-bolder px-4 py-3">Presente</span>
-                                                                </td>
-                                                                <td class="text-end">
-                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="odd">
-                                                                <td>
-                                                                    <!--begin::User-->
-                                                                    <div class="d-flex align-items-center">
-                                                                        <!--begin::Wrapper-->
-                                                                        <div class="me-5 position-relative">
-                                                                            <!--begin::Avatar-->
-                                                                            <div class="symbol symbol-35px symbol-circle">
-                                                                                <span class="symbol-label bg-light-primary text-primary fw-bold">N</span>
-                                                                            </div>
-                                                                            <!--end::Avatar-->
-                                                                            <!--begin::Online-->
-                                                                            <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
-                                                                            <!--end::Online-->
-                                                                        </div>
-                                                                        <!--end::Wrapper-->
-                                                                        <!--begin::Info-->
-                                                                        <div class="d-flex flex-column justify-content-center">
-                                                                            <a href="" class="fs-6 text-gray-800 text-hover-primary">Beatris Souza</a>
-                                                                            <div class="fw-bold text-gray-400">202100780</div>
-                                                                        </div>
-                                                                        <!--end::Info-->
-                                                                    </div>
-                                                                    <!--end::User-->
-                                                                </td>
-                                                                <td data-order="2022-11-10T00:00:00+00:00">12/12/2022</td>
-                                                                <td>
-                                                                    <span class="badge badge-light-success fw-bolder px-4 py-3">Presente</span>
-                                                                </td>
-                                                                <td class="text-end">
-                                                                    <a href="#" class="btn btn-light btn-sm">View</a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <!--end::Body-->
-                                                    </table>
-                                                </div><div class="row"><div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"><div class="dataTables_length" id="kt_profile_overview_table_length"><label><select name="kt_profile_overview_table_length" aria-controls="kt_profile_overview_table" class="form-select form-select-sm form-select-solid"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div><div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end"><div class="dataTables_paginate paging_simple_numbers" id="kt_profile_overview_table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="kt_profile_overview_table_previous"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="kt_profile_overview_table_next"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li></ul></div></div></div>
-                                            </div>
-                                            <!--end::Table-->
-                                        </div>
-                                        <!--end::Table container-->
-                                    </div>
-                                    <!--end::Card body-->
                                 </div>
-                                <!--end::Card-->
+                                <!--end::Col-->
                             </div>
-                            <!--end::Container-->
+                            <!--end::Row-->
+                            <!--begin::Tables Widget 13-->
+                            <div class="card mb-5 mb-xl-8">
+                                <!--begin::Body-->
+                                <div class="card-body py-3">
+                                    <!--begin::Table container-->
+                                    <div class="table-responsive">
+                                        <!--begin::Table-->
+                                        <table class="table table-row-bordered table-row-gray-100 align-middle gs-0 gy-3">
+                                            <!--begin::Table head-->
+                                            <thead>
+                                                <tr class="fw-bolder text-muted">
+                                                    <th class="w-25px">
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox" value="1" data-kt-check="true" data-kt-check-target=".widget-13-check">
+                                                        </div>
+                                                    </th>
+                                                    <th class="min-w-150px">Order Id</th>
+                                                    <th class="min-w-140px">Country</th>
+                                                    <th class="min-w-120px">Date</th>
+                                                    <th class="min-w-120px">Company</th>
+                                                    <th class="min-w-120px">Total</th>
+                                                    <th class="min-w-120px">Status</th>
+                                                    <th class="min-w-100px text-end">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <!--end::Table head-->
+                                            <!--begin::Table body-->
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input widget-13-check" type="checkbox" value="1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">56037-XDER</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Brasil</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: PH</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">05/28/2020</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Intertico</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Web, UI/UX Design</span>
+                                                    </td>
+                                                    <td class="text-dark fw-bolder text-hover-primary fs-6">$3560</td>
+                                                    <td>
+                                                        <span class="badge badge-light-success">Approved</span>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="currentColor"></path>
+                                                                    <path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input widget-13-check" type="checkbox" value="1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">05822-FXSP</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Belarus</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: BY</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">04/18/2021</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Agoda</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Houses &amp; Hotels</span>
+                                                    </td>
+                                                    <td class="text-dark fw-bolder text-hover-primary fs-6">$4850</td>
+                                                    <td>
+                                                        <span class="badge badge-light-warning">In Progress</span>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="currentColor"></path>
+                                                                    <path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input widget-13-check" type="checkbox" value="1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">4472-QREX</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Phillipines</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: BH</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">07/23/2019</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">RoadGee</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Transportation</span>
+                                                    </td>
+                                                    <td class="text-dark fw-bolder text-hover-primary fs-6">$8376</td>
+                                                    <td>
+                                                        <span class="badge badge-light-danger">Success</span>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="currentColor"></path>
+                                                                    <path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input widget-13-check" type="checkbox" value="1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">00347-BCLQ</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Argentina</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: BR</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">12/21/2021</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">The Hill</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Insurance</span>
+                                                    </td>
+                                                    <td class="text-dark fw-bolder text-hover-primary fs-6">$9486</td>
+                                                    <td>
+                                                        <span class="badge badge-light-info">Rejected</span>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="currentColor"></path>
+                                                                    <path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                            <input class="form-check-input widget-13-check" type="checkbox" value="1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">59486-XDER</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Agoda</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: BT</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">05/28/2020</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Code: Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Phillipines</a>
+                                                        <span class="text-muted fw-bold text-muted d-block fs-7">Transportation</span>
+                                                    </td>
+                                                    <td class="text-dark fw-bolder text-hover-primary fs-6">$8476</td>
+                                                    <td>
+                                                        <span class="badge badge-light-primary">Approved</span>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                                            <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="currentColor"></path>
+                                                                    <path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                                                            <span class="svg-icon svg-icon-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="currentColor"></path>
+                                                                    <path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <!--end::Svg Icon-->
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <!--end::Table body-->
+                                        </table>
+                                        <!--end::Table-->
+                                    </div>
+                                    <!--end::Table container-->
+                                </div>
+                                <!--begin::Body-->
+                            </div>
+                            <!--end::Tables Widget 13-->
                         </div>
-                        <!--end::Post-->
+                        <!--end::Container-->
                     </div>
+                    <!--end::Post-->
                 </div>
                 <!--end::Content-->
                 <!--begin::Footer-->
