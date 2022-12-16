@@ -107,7 +107,7 @@ function Dispselect(Select) {
     var dispS = document.getElementsByClassName('DispSelect');//Vai buscar todos os elementos com o class=DispSelect
     var DiscpTab = document.getElementById(Select.textContent);//Pega o elemento com o id = ao conteudo do elemento clicado
     var DiscpTabAnterior = document.getElementById(dispSelecAnterior);//Pega o elemento com o id = ao conteudo do elemento clicado anteriormente
-
+    
     if (dispS.length === 0) {//Caso nao exista um elemento com o id=DispSelect altera a classe do elemente clicado para DispSelect e mostra um novo card
         Select.className = "DispSelect";
         DiscpTab.style.display = "block";
@@ -131,6 +131,43 @@ function Dispselect(Select) {
 
     dispSelecAnterior = Select.textContent;//Salva o conteudo do elemento selecionado
 }
+
+//apresentação da disciplina seleciona no Aluno
+//var dispSelecAnterior;//Para guardar qual a disciplina guardade anteriormente
+//function curso(Select) {
+
+//    var disp = document.querySelectorAll('[id=Curso]');//Vai buscar todos os elementos com o id=Disciplina
+//    var dispS = document.getElementsByClassName('DispSelect');//Vai buscar todos os elementos com o class=DispSelect
+//    var DiscpTab = document.getElementById(Select.textContent);//Pega o elemento com o id = ao conteudo do elemento clicado
+//    var DiscpTabAnterior = document.getElementById(dispSelecAnterior);//Pega o elemento com o id = ao conteudo do elemento clicado anteriormente
+//    var card = document.getElementById("CardsSelect");
+//    for (var i = 0; i < disp.length; i++) {//Percorre todos os elementos que tenham como id=Disciplina
+//        card.innerHTML += '<div id="' + disp[i].textContent + '" class="col-xl-5" style="display:none;">< !--begin::List Widget 6-- ><div class="card card-xl-stretch mb-xl-8"><!--begin::Header--><div class="card-header border-0 pt-5"><h3 class="card-title align-items-start flex-column"><span class="card-label fw-bolder text-dark">' + disp[i].textContent + '--> Turmas</span></h3></div><!--end::Header--><!--begin::Body--><div class="card-body pt-6"><!--begin::Item--><div class="d-flex flex-stack"><!--begin::Section--><div class="d-flex align-items-center flex-row-fluid flex-wrap"><!--begin:Author--><div class="flex-grow-1 me-2"><a id="Disciplina" class="Disp text-muted" onclick="Dispselect(this)">PWDAM 1º Ano</a></div><!--end:Author--><!--begin::Actions--><a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"><!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg--><span class="svg-icon svg-icon-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor"></rect><path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor"></path></svg></span><!--end::Svg Icon--></a><!--begin::Actions--></div><!--end::Section--></div><!--end::Item--><!--begin::Separator--><div class="separator separator-dashed my-4"></div><!--end::Separator--><!--begin::Item--><div class="d-flex flex-stack "><!--begin::Section--><div class="d-flex align-items-center flex-row-fluid flex-wrap"><!--begin:Author--><div class="flex-grow-1 me-2"><a id="Disciplina" class="Disp text-muted" onclick="Dispselect(this)">PWDAM 2º Ano</a></div><!--end:Author--><!--begin::Actions--><a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"><!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg--><span class="svg-icon svg-icon-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor"></rect><path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor"></path></svg></span><!--end::Svg Icon--></a><!--begin::Actions--></div><!--end::Section--></div><!--end::Item--><!--begin::Separator--><div class="separator separator-dashed my-4"></div><!--end::Separator--></div><!--end::Body--></div><!--end::List Widget 6-- ></div > ';
+
+//    }
+//    if (dispS.length === 0) {//Caso nao exista um elemento com o id=DispSelect altera a classe do elemente clicado para DispSelect e mostra um novo card
+//        Select.className = "DispSelect"; 
+//        //DiscpTab.style.display = "block"; alert("ola")
+//    }
+//    else {//Caso já exista
+//        dispS[0].className = "Disp";//Altera a classe do elemento que contenha como classe=DispSelect
+//        DiscpTabAnterior.style.display = "none";//Escondendo o card
+
+//        for (var i = 0; i < disp.length; i++) {//Percorre todos os elementos que tenham como id=Disciplina
+//            if (disp[i] === Select) {//Caso o elemento Selecionado for o mesmo que o elemento a ser percorrido
+//                disp[i].className = "DispSelect";//Altera a Classe desse elemento para DispSelect
+//                DiscpTab.style.display = "block";//Mostra o card
+//            }
+//            else {//Caso o elemento Selecionado não seja o mesmo que o elemento a ser percorrido
+//                disp[i].className = "Disp";//Mantem a classe Disp
+//            }
+
+//        }
+
+//    }
+
+//    dispSelecAnterior = Select.textContent;//Salva o conteudo do elemento selecionado
+//}
 
 //var dispSelecAnteriorP;
 //function DispselectP(Select,Section) {
@@ -160,3 +197,14 @@ function Dispselect(Select) {
 //    }
 //    dispSelecAnteriorP = Select.textContent;
 //}
+
+
+function cursos() {
+    var disp = document.querySelectorAll('[id=Disciplina]');//Vai buscar todos os elementos com o id=Disciplina
+    var card = document.getElementById("CardsSelect");
+    for (var i = 0; i < disp.length; i++) {
+        //Percorre todos os elementos que tenham como id=Disciplina
+        card.innerHTML += '<div id="' + disp[i].textContent + '" class="col-xl-5" style="display:none;"><!--begin::List Widget 6--><div class="card card-xl-stretch mb-xl-8"><!--begin::Header--><div class="card-header border-0 pt-5"><h3 class="card-title align-items-start flex-column"><span class="card-label fw-bolder text-dark">' + disp[i].textContent + '--> Turmas</span></h3></div><!--end::Header--><!--begin::Body--><div class="card-body pt-6"><!--begin::Item--><div class="d-flex flex-stack"><!--begin::Section--><div class="d-flex align-items-center flex-row-fluid flex-wrap"><!--begin:Author--><div class="flex-grow-1 me-2"><a id="Disciplina" class="Disp text-muted" onclick="Dispselect(this)">PWDAM 1º Ano</a></div><!--end:Author--><!--begin::Actions--><a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"><!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg--><span class="svg-icon svg-icon-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor"></rect><path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor"></path></svg></span><!--end::Svg Icon--></a><!--begin::Actions--></div><!--end::Section--></div><!--end::Item--><!--begin::Separator--><div class="separator separator-dashed my-4"></div><!--end::Separator--><!--begin::Item--><div class="d-flex flex-stack "><!--begin::Section--><div class="d-flex align-items-center flex-row-fluid flex-wrap"><!--begin:Author--><div class="flex-grow-1 me-2"><a id="Disciplina" class="Disp text-muted" onclick="Dispselect(this)">PWDAM 2º Ano</a></div><!--end:Author--><!--begin::Actions--><a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px"><!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg--><span class="svg-icon svg-icon-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="currentColor"></rect><path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor"></path></svg></span><!--end::Svg Icon--></a><!--begin::Actions--></div><!--end::Section--></div><!--end::Item--><!--begin::Separator--><div class="separator separator-dashed my-4"></div><!--end::Separator--></div><!--end::Body--></div><!--end::List Widget 6-- ></div > ';
+        alert(disp[i].textContent)
+    }
+}
