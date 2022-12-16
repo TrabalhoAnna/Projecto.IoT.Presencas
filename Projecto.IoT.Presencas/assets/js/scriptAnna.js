@@ -28,102 +28,109 @@ function CancelarEdicao() {
 }
 
 
-// Get the modal
+// Pegar modal
 var modal = document.getElementById("myModal");
 var modal2 = document.getElementById("myModal2");
 
-// Get the button that opens the modal
+// Pegar Botao que abre o modal
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
+// pegar o elemento <span> que fecha o modal
 var span = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal 
+// Função de Abrir Modal
 var data;
 var btnjust;
 var btnJustif;
+//a= Elemento que clicou;
+//b= Elemento com a data da linha que clicou
+//c= Linha que clicou
+//d= Elemento que ao clicar mostra o modal 2
 function btnM(a, b, c, d) {
-    modal.style.display = "block";
-    document.getElementById("Txtmodal").innerHTML = a.textContent + "<br/><h2> Falta dia: " + b + "</h2>";
-    data = c;
-    btnjust = a;
-    btnJustif = d;
+    modal.style.display = "block";//Aparece o 1 Modal
+    document.getElementById("Txtmodal").innerHTML = a.textContent + "<br/><h2> Falta dia: " + b + "</h2>";//Texto do título do modal
+    data = c;//Guarda a linha que clicou
+    btnjust = a;//Guarda o elemento que clicou
+    btnJustif = d;//Guarda o elemento que ao clicar mostra o modal 2
 }
 
+//a= Elemento que clicou;
+//b= Elemento com a data da linha que clicou
+//c= Ver ultima coluna da tabela(elementos escondido) 
 function btnJustificado(a, b, c) {
-    modal2.style.display = "block";
-    document.getElementById("Txtmodal2").innerHTML = a.textContent + "<br/><h2> Falta dia: " + b + "</h2>";
-    document.getElementById("ModalJustificado").value = c.textContent;
-    btnJust = c;
+    modal2.style.display = "block";//Aparece o 2 Modal
+    document.getElementById("Txtmodal2").innerHTML = a.textContent + "<br/><h2> Falta dia: " + b + "</h2>";//Texto do título do modal
+    document.getElementById("ModalJustificado").value = c.textContent;//Altera o valor da textarea colocando o conteúdo da ultima coluna da tabela(elemento escondido com o valor da justificação) 
+    
 }
-// When the user clicks on <span> (x), close the modal
+// Ao clicar no elemento <span> fecha o modal
 
 span.onclick = function () {
     modal.style.display = "none";
     modal2.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Ao clicar fora do modal fecha o modal
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+    //Botao cancelar do Modal 1
     var canc = document.getElementById("Cancel");
     canc.onclick = function () {
 
         modal.style.display = "none";
     }
+    //Botao OK do modal 2 que fecha o modal 2
     var BtnOk = document.getElementById("BtnOk");
     BtnOk.onclick = function () {
 
         modal2.style.display = "none";
     }
+    //Botao Submeter do modal 1 que guardará o valor presente na textArea do 1 modal numa nova coluna escondida criada na tabela
     var subm = document.getElementById("Submit");
     subm.onclick = function () {
-        var just = document.getElementById("Just");
-        btnjust.style.display = "none";
-        btnJustif.style.display = "block";
-        modal.style.display = "none";
-        data.innerHTML += '<td style="display:none;">' + just.value + '</td>';
-        just.value = "";
-        modal.style.display = "none";
+        var just = document.getElementById("Just");//TextArea onde está a justificação
+        btnjust.style.display = "none";//Esconde o elemente que ao clicar abriu o modal 1
+        btnJustif.style.display = "block";//Mostra o elemento que ao clicar faz abrir o modal 2
+        modal.style.display = "none";//Esconde modal 1
+        data.innerHTML += '<td style="display:none;">' + just.value + '</td>';//Cria nova coluna escondida na tabela com o valor da justificação presente na textArea do modal 1
+        just.value = "";//Reseta o valor da justificação de modo quando justificar outra falta não aparecer o valor da justifucação da falta anterior
     }
 }
 
 
 //apresentação da disciplina seleciona no Aluno
-var dispSelecAnterior;
+var dispSelecAnterior;//Para guardar qual a disciplina guardade anteriormente
 function Dispselect(Select) {
 
-    var disp = document.querySelectorAll('[id=Disciplina]');
-    var dispS = document.getElementsByClassName('DispSelect');
-    var DiscpTab = document.getElementById(Select.textContent);
-    var DiscpTabAnterior = document.getElementById(dispSelecAnterior);
+    var disp = document.querySelectorAll('[id=Disciplina]');//Vai buscar todos os elementos com o id=Disciplina
+    var dispS = document.getElementsByClassName('DispSelect');//Vai buscar todos os elementos com o class=DispSelect
+    var DiscpTab = document.getElementById(Select.textContent);//Pega o elemento com o id = ao conteudo do elemento clicado
+    var DiscpTabAnterior = document.getElementById(dispSelecAnterior);//Pega o elemento com o id = ao conteudo do elemento clicado anteriormente
 
-    if (dispS.length === 0) {
+    if (dispS.length === 0) {//Caso nao exista um elemento com o id=DispSelect altera a classe do elemente clicado para DispSelect e mostra um novo card
         Select.className = "DispSelect";
         DiscpTab.style.display = "block";
     }
-    else {
-        dispS[0].className = "Disp";
-        DiscpTabAnterior.style.display = "none";
+    else {//Caso já exista
+        dispS[0].className = "Disp";//Altera a classe do elemento que contenha como classe=DispSelect
+        DiscpTabAnterior.style.display = "none";//Escondendo o card
 
-        for (var i = 0; i < disp.length; i++) {
-            if (disp[i] === Select) {
-                disp[i].className = "DispSelect";
-                DiscpTab.style.display = "block";
+        for (var i = 0; i < disp.length; i++) {//Percorre todos os elementos que tenham como id=Disciplina
+            if (disp[i] === Select) {//Caso o elemento Selecionado for o mesmo que o elemento a ser percorrido
+                disp[i].className = "DispSelect";//Altera a Classe desse elemento para DispSelect
+                DiscpTab.style.display = "block";//Mostra o card
             }
-            else {
-                disp[i].className = "Disp";
+            else {//Caso o elemento Selecionado não seja o mesmo que o elemento a ser percorrido
+                disp[i].className = "Disp";//Mantem a classe Disp
             }
 
         }
 
     }
 
-    dispSelecAnterior = Select.textContent;
+    dispSelecAnterior = Select.textContent;//Salva o conteudo do elemento selecionado
 }
-
-
 
 //var dispSelecAnteriorP;
 //function DispselectP(Select,Section) {
