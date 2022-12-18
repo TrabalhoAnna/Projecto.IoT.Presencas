@@ -64,6 +64,7 @@ function btnJustificado(a, b, c) {
     } else {
         document.getElementById("ModalJustificado").value = c.textContent;//Altera o valor da textarea colocando o conteúdo da ultima coluna da tabela(elemento escondido com o valor da justificação) 
     }
+    alert("otario")
     
 }
 // Ao clicar no elemento <span> fecha o modal
