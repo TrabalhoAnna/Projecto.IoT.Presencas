@@ -70,7 +70,6 @@ function btnJustificado(a, b, c) {
 
 span.onclick = function () {
     modal.style.display = "none";
-    modal2.style.display = "none";
 }
 
 // Ao clicar fora do modal fecha o modal
