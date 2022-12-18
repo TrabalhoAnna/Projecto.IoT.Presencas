@@ -64,7 +64,6 @@ function btnJustificado(a, b, c) {
     } else {
         document.getElementById("ModalJustificado").value = c.textContent;//Altera o valor da textarea colocando o conteúdo da ultima coluna da tabela(elemento escondido com o valor da justificação) 
     }
-    alert("otario")
     
 }
 // Ao clicar no elemento <span> fecha o modal
@@ -101,7 +100,10 @@ window.onclick = function (event) {
         just.value = "";//Reseta o valor da justificação de modo quando justificar outra falta não aparecer o valor da justifucação da falta anterior
     }
 }
+function ok() {
 
+    modal2.style.display = "none";
+}
 
 //apresentação da disciplina seleciona no Aluno
 var dispSelecAnterior;//Para guardar qual a disciplina guardade anteriormente
