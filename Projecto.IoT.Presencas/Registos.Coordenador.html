@@ -16,11 +16,12 @@
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/styleAnna.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
 <!--begin::Body-->
-<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px" onload="javascript:cursos()">
     <!--begin::Main-->
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root">
@@ -234,7 +235,7 @@
                 <!--begin::Content-->
                 <div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="padding-top: 31px;">
                     <!--begin::Post-->
-                    <div class="post d-flex flex-column-fluid" id="kt_post">
+                    <div id="CardCoordenador" class="post d-flex flex-column-fluid" id="kt_post">
                         <!--begin::Container-->
                         <div id="kt_content_container" class="container-xxl">
                             <!--begin::Row-->
@@ -251,13 +252,13 @@
                                 <!--begin::Body-->
                                 <div class="card-body pt-6">
                                     <!--begin::Item-->
-                                    <div class="row mb-6" data-select2-id="select2-data-564-fu7u">
+                                    <div id="CursoCoordenador" class="row mb-6" data-select2-id="select2-data-564-fu7u">
                                         <!--begin::Label-->
                                         <label class="col-lg-1 col-form-label fw-bold fs-6 required">Cursos</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
                                         <div class="col-lg-11 fv-row" data-select2-id="select2-data-563-w9mt">
-                                            <select name="currnecy" aria-label="Selecione o Curso" data-control="select2" data-placeholder="Selecione o Curso.." class="form-select form-select-solid form-select-lg select2-hidden-accessible" data-select2-id="select2-data-19-jzt9" tabindex="-1" aria-hidden="true">
+                                            <select id="SelectCurso" name="currnecy" onchange="SelectFiltro(this.parentElement.parentElement)" aria-label="Selecione o Curso" data-control="select2" data-placeholder="Selecione o Curso.." class="form-select form-select-solid form-select-lg select2-hidden-accessible" data-select2-id="select2-data-19-jzt9" tabindex="-1" aria-hidden="true">
                                                 <option value="">Selecione o curso...</option>
                                                 <option value="pwdam">Programação Web, Dispositivos e Aplicações Moveis</option>
                                                 <option value="m">Mecatronica</option>
@@ -269,15 +270,13 @@
                                     <!--end::Item-->
                                     <!--begin::Item-->
                                     <!--begin::Item-->
-                                    <div class="row mb-6">
+                                    <div class="row mb-6" id="DispCoordenador" style="display:none">
                                         <!--begin::Label-->
-                                        <label class="col-lg-1 col-form-label fw-bold fs-6">
-                                            <span class="required">Disciplinas</span>
-                                        </label>
+                                        <label class="col-lg-1 col-form-label required fw-bold fs-6">Disciplinas</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
-                                        <div class="col-lg-5 fv-row fv-plugins-icon-container">
-                                            <select name="country" aria-label="Selecione a disciplina" data-control="select2" data-placeholder="Selecione a Disciplina.." class="form-select form-select-solid form-select-lg fw-bold select2-hidden-accessible" data-select2-id="select2-data-10-thyc" tabindex="-1" aria-hidden="true">
+                                        <div class="col-lg-11 fv-row fv-plugins-icon-container">
+                                            <select id="SelectDisp" name="country" onchange="SelectFiltro(this.parentElement.parentElement)" aria-label="Selecione a disciplina" data-control="select2" data-placeholder="Selecione a Disciplina.." class="form-select form-select-solid form-select-lg fw-bold select2-hidden-accessible" data-select2-id="select2-data-10-thyc" tabindex="-1" aria-hidden="true">
                                                 <option value="">Selecione a disciplina...</option>
                                                 <option value="sgbd">Sistema de Gestao Base de Dados</option>
                                                 <option value="mat">Matematica</option>
@@ -285,17 +284,20 @@
                                             </select><span class="select2 select2-container select2-container--bootstrap5 select2-container--above select2-container--focus" dir="ltr" data-select2-id="select2-data-11-68t5" style="width: 100%;"><span class="selection"></span></span>
                                             <div class="fv-plugins-message-container invalid-feedback"></div>
                                         </div>
-                                        <!--end::Col-->
-                                        <!--begin::Label-->
+                                    </div>
+                                    <!--end::Col-->
+                                    <!--begin::Label-->
+                                    <div class="row mb-6" id="TrmCoordenador" style="display:none">
                                         <label class="col-lg-1 col-form-label required fw-bold fs-6">Turmas</label>
                                         <!--end::Label-->
                                         <!--begin::Col-->
-                                        <div class="col-lg-5 fv-row fv-plugins-icon-container">
-                                            <select name="timezone" aria-label="Selecione a turma" data-control="select2" data-placeholder="Selecione a Turma.." class="form-select form-select-solid form-select-lg select2-hidden-accessible" data-select2-id="select2-data-16-n5kv" tabindex="-1" aria-hidden="true">
+                                        <div class="col-lg-11 fv-row fv-plugins-icon-container">
+                                            <select id="SelectTrm" name="country" onchange="SelectFiltro(this.parentElement.parentElement)" aria-label="Selecione a turma" data-control="select2" data-placeholder="Selecione a Turma.." class="form-select form-select-solid form-select-lg select2-hidden-accessible" data-select2-id="select2-data-16-n5kv" tabindex="-1" aria-hidden="true">
                                                 <option value="">Selecione a turma...</option>
-                                                <option value="pwdam1">PWDAM 1º Ano</option>
-                                                <option value="pwdam1">PWDAM 2º Ano</option>
-                                            </select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-17-j7w3" style="width: 100%;"><span class="selection"></span></span>
+                                                <option name="turmasC" value="pwdam1">PWDAM 1º Ano</option>
+                                                <option name="turmasC" value="pwdam2">PWDAM 2º Ano</option>
+                                                <option name="turmasC" value="pwdam3">PWDAM 3º Ano</option>
+                                            </select><span class="select2 select2-container select2-container--bootstrap5 select2-container--above select2-container--focus" dir="ltr" data-select2-id="select2-data-11-68t5" style="width: 100%;"><span class="selection"></span></span>
                                             <div class="fv-plugins-message-container invalid-feedback"></div>
                                         </div>
                                         <!--end::Col-->
@@ -303,7 +305,7 @@
                                     <!--end::Item-->
                                     <!--end::Item-->
                                     <div class="card-footer d-flex justify-content-end py-6 px-9">
-                                        <button type="submit" class="btn btn-primary" id="pesquisaCoord">Pesquisar</button>
+                                        <button type="submit" class="btn btn-primary" id="pesquisaCoord" style="display:none">Pesquisar</button>
                                     </div>
                                 </div>
                                 <!--end::Body-->
@@ -312,158 +314,158 @@
                             <!--end::Col-->
                             <!--end::Row-->
                             <!--begin::Tables Widget 13-->
-                            <div class="card mb-5 mb-xl-8">
+                            <!--<div class="card mb-5 mb-xl-8">-->
                                 <!--begin::Card header-->
-                                <div class="card-header mt-5">
+                                <!--<div class="card-header mt-5">-->
                                     <!--begin::Card title-->
-                                    <div class="card-title flex-column">
+                                    <!--<div class="card-title flex-column">
                                         <h3 class="fw-bolder mb-1">PWDAM 1º Ano</h3>
-                                    </div>
+                                    </div>-->
                                     <!--begin::Card title-->
-                                </div>
+                                <!--</div>-->
                                 <!--end::Card header-->
                                 <!--begin::Body-->
-                                <div class="card-body py-3">
+                                <!--<div class="card-body py-3">-->
                                     <!--begin::Table container-->
-                                    <div class="table-responsive">
+                                    <!--<div class="table-responsive">-->
                                         <!--begin::Table-->
-                                        <table id="kt_profile_overview_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bolder dataTable no-footer">
+                                        <!--<table id="kt_profile_overview_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bolder dataTable no-footer">-->
                                             <!--begin::Head-->
-                                            <thead class="fs-7 text-gray-400 text-uppercase">
+                                            <!--<thead class="fs-7 text-gray-400 text-uppercase">
                                                 <tr>
                                                     <th class="min-w-250px sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Aluno: activate to sort column ascending" style="width: 410.925px;">Aluno</th>
                                                     <th class="min-w-50px text-end sorting" tabindex="0" aria-controls="kt_profile_overview_table" rowspan="1" colspan="1" aria-label="Details: activate to sort column ascending" style="width: 110.45px;"></th>
                                                 </tr>
-                                            </thead>
+                                            </thead>-->
                                             <!--end::Head-->
                                             <!--begin::Body-->
-                                            <tbody class="fs-6">
+                                            <!--<tbody class="fs-6">
                                                 <tr class="even">
-                                                    <td>
+                                                    <td>-->
                                                         <!--begin::User-->
-                                                        <div class="d-flex align-items-center">
+                                                        <!--<div class="d-flex align-items-center">-->
                                                             <!--begin::Wrapper-->
-                                                            <div class="me-5 position-relative">
+                                                            <!--<div class="me-5 position-relative">-->
                                                                 <!--begin::Avatar-->
-                                                                <div class="symbol symbol-35px symbol-circle">
+                                                                <!--<div class="symbol symbol-35px symbol-circle">
                                                                     <span class="symbol-label bg-light-danger text-danger fw-bold">A</span>
-                                                                </div>
+                                                                </div>-->
                                                                 <!--end::Avatar-->
                                                                 <!--begin::Online-->
-                                                                <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                <!--<div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>-->
                                                                 <!--end::Online-->
-                                                            </div>
+                                                            <!--</div>-->
                                                             <!--end::Wrapper-->
                                                             <!--begin::Info-->
-                                                            <div class="d-flex flex-column justify-content-center">
+                                                            <!--<div class="d-flex flex-column justify-content-center">
                                                                 <a href="" class="fs-6 text-gray-800 text-hover-primary">Anna Almada</a>
                                                                 <div class="fw-bold text-gray-400">202200746</div>
-                                                            </div>
+                                                            </div>-->
                                                             <!--end::Info-->
-                                                        </div>
+                                                        <!--</div>-->
                                                         <!--end::User-->
-                                                    </td>
+                                                    <!--</td>
                                                     <td class="text-end">
                                                         <a href="#" class="btn btn-light btn-sm">View</a>
                                                     </td>
                                                 </tr>
                                                 <tr class="even">
-                                                    <td>
+                                                    <td>-->
                                                         <!--begin::User-->
-                                                        <div class="d-flex align-items-center">
+                                                        <!--<div class="d-flex align-items-center">-->
                                                             <!--begin::Wrapper-->
-                                                            <div class="me-5 position-relative">
+                                                            <!--<div class="me-5 position-relative">-->
                                                                 <!--begin::Avatar-->
-                                                                <div class="symbol symbol-35px symbol-circle">
+                                                                <!--<div class="symbol symbol-35px symbol-circle">
                                                                     <span class="symbol-label bg-light-warning text-warning fw-bold">J</span>
-                                                                </div>
+                                                                </div>-->
                                                                 <!--end::Avatar-->
                                                                 <!--begin::Online-->
-                                                                <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                <!--<div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>-->
                                                                 <!--end::Online-->
-                                                            </div>
+                                                            <!--</div>-->
                                                             <!--end::Wrapper-->
                                                             <!--begin::Info-->
-                                                            <div class="d-flex flex-column justify-content-center">
+                                                            <!--<div class="d-flex flex-column justify-content-center">
                                                                 <a href="" class="fs-6 text-gray-800 text-hover-primary">João Barbas</a>
                                                                 <div class="fw-bold text-gray-400">202200755</div>
-                                                            </div>
+                                                            </div>-->
                                                             <!--end::Info-->
-                                                        </div>
+                                                        <!--</div>-->
                                                         <!--end::User-->
-                                                    </td>
+                                                    <!--</td>
                                                     <td class="text-end">
                                                         <a href="#" class="btn btn-light btn-sm">View</a>
                                                     </td>
                                                 </tr>
                                                 <tr class="even">
-                                                    <td>
+                                                    <td>-->
                                                         <!--begin::User-->
-                                                        <div class="d-flex align-items-center">
+                                                        <!--<div class="d-flex align-items-center">-->
                                                             <!--begin::Wrapper-->
-                                                            <div class="me-5 position-relative">
+                                                            <!--<div class="me-5 position-relative">-->
                                                                 <!--begin::Avatar-->
-                                                                <div class="symbol symbol-35px symbol-circle">
+                                                                <!--<div class="symbol symbol-35px symbol-circle">
                                                                     <span class="symbol-label bg-light-danger text-danger fw-bold">D</span>
-                                                                </div>
+                                                                </div>-->
                                                                 <!--end::Avatar-->
                                                                 <!--begin::Online-->
-                                                                <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                <!--<div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>-->
                                                                 <!--end::Online-->
-                                                            </div>
+                                                            <!--</div>-->
                                                             <!--end::Wrapper-->
                                                             <!--begin::Info-->
-                                                            <div class="d-flex flex-column justify-content-center">
+                                                            <!--<div class="d-flex flex-column justify-content-center">
                                                                 <a href="" class="fs-6 text-gray-800 text-hover-primary">Denis Afanasii</a>
                                                                 <div class="fw-bold text-gray-400">202200750</div>
-                                                            </div>
+                                                            </div>-->
                                                             <!--end::Info-->
-                                                        </div>
+                                                        <!--</div>-->
                                                         <!--end::User-->
-                                                    </td>
+                                                    <!--</td>
                                                     <td class="text-end">
                                                         <a href="#" class="btn btn-light btn-sm">View</a>
                                                     </td>
                                                 </tr>
                                                 <tr class="odd">
-                                                    <td>
+                                                    <td>-->
                                                         <!--begin::User-->
-                                                        <div class="d-flex align-items-center">
+                                                        <!--<div class="d-flex align-items-center">-->
                                                             <!--begin::Wrapper-->
-                                                            <div class="me-5 position-relative">
+                                                            <!--<div class="me-5 position-relative">-->
                                                                 <!--begin::Avatar-->
-                                                                <div class="symbol symbol-35px symbol-circle">
+                                                                <!--<div class="symbol symbol-35px symbol-circle">
                                                                     <span class="symbol-label bg-light-primary text-primary fw-bold">N</span>
-                                                                </div>
+                                                                </div>-->
                                                                 <!--end::Avatar-->
                                                                 <!--begin::Online-->
-                                                                <div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>
+                                                                <!--<div class="bg-success position-absolute h-8px w-8px rounded-circle translate-middle start-100 top-100 ms-n1 mt-n1"></div>-->
                                                                 <!--end::Online-->
-                                                            </div>
+                                                            <!--</div>-->
                                                             <!--end::Wrapper-->
                                                             <!--begin::Info-->
-                                                            <div class="d-flex flex-column justify-content-center">
+                                                            <!--<div class="d-flex flex-column justify-content-center">
                                                                 <a href="" class="fs-6 text-gray-800 text-hover-primary">Beatris Souza</a>
                                                                 <div class="fw-bold text-gray-400">202100780</div>
-                                                            </div>
+                                                            </div>-->
                                                             <!--end::Info-->
-                                                        </div>
+                                                        <!--</div>-->
                                                         <!--end::User-->
-                                                    </td>
+                                                    <!--</td>
                                                     <td class="text-end">
                                                         <a href="#" class="btn btn-light btn-sm">View</a>
                                                     </td>
                                                 </tr>
-                                            </tbody>
+                                            </tbody>-->
                                             <!--end::Body-->
-                                        </table>
+                                        <!--</table>-->
                                         <!--end::Table-->
-                                    </div>
+                                    <!--</div>-->
                                     <!--end::Table container-->
-                                    <div class="row"><div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"><div class="dataTables_length" id="kt_profile_overview_table_length"><label><select name="kt_profile_overview_table_length" aria-controls="kt_profile_overview_table" class="form-select form-select-sm form-select-solid"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div><div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end"><div class="dataTables_paginate paging_simple_numbers" id="kt_profile_overview_table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="kt_profile_overview_table_previous"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="kt_profile_overview_table_next"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li></ul></div></div></div>
-                                </div>
+                                    <!--<div class="row"><div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start"><div class="dataTables_length" id="kt_profile_overview_table_length"><label><select name="kt_profile_overview_table_length" aria-controls="kt_profile_overview_table" class="form-select form-select-sm form-select-solid"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div><div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end"><div class="dataTables_paginate paging_simple_numbers" id="kt_profile_overview_table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="kt_profile_overview_table_previous"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="0" tabindex="0" class="page-link"><i class="previous"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="kt_profile_overview_table_next"><a href="#" aria-controls="kt_profile_overview_table" data-dt-idx="4" tabindex="0" class="page-link"><i class="next"></i></a></li></ul></div></div></div>
+                                </div>-->
                                 <!--begin::Body-->
-                            </div>
+                            <!--</div>-->
                             <!--end::Tables Widget 13-->
                         </div>
                         <!--end::Container-->
@@ -510,6 +512,7 @@
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="assets/plugins/global/plugins.bundle.js"></script>
     <script src="assets/js/scripts.bundle.js"></script>
+    <script src="assets/js/scriptAnna.js"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Page Vendors Javascript(used by this page)-->
     <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
