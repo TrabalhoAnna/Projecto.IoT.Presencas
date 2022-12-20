@@ -275,8 +275,7 @@ function SelectFiltro(cardSelect) {
     
 }
 
-
-document.getElementById("pesquisaCoord").onclick = function () {
+function BtnPesq() {
     alert("ola")
     var TrmC = document.querySelectorAll('[name=turmasC]');//Vai buscar todos os elementos com o id=Disciplina
     
