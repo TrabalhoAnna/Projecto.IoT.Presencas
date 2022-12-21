@@ -165,10 +165,10 @@ function TrmSelect(Select) {
 
     var TrmTabAnteriorV = document.getElementById(TrmTabAnterior);//Pega o elemento com o id = ao conteudo do elemento clicado anteriormente
     
-    alert("olaaaa");
+    alert("AH");
     if (TrmS.length === 1) {//Caso nao exista um elemento com o id=DispSelect altera a classe do elemente clicado para DispSelect e mostra um novo card
         Select.className = "DispSelect";
-        TrmTab.style.display = "block"; 
+        TrmTab.style.display = "table"; 
         Card.style.display = "block";
         Titulo.textContent = Select.textContent;
     }
@@ -181,7 +181,7 @@ function TrmSelect(Select) {
 
             if (Trm[i] === Select) {//Caso o elemento Selecionado for o mesmo que o elemento a ser percorrido
                 Trm[i].className = "DispSelect";//Altera a Classe desse elemento para DispSelect
-                TrmTab.style.display = "block";//Mostra o card
+                TrmTab.style.display = "table";//Mostra o card
                 Card.style.display = "block";
                 Titulo.textContent = Select.textContent;
             }
