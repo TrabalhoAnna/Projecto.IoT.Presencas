@@ -219,6 +219,8 @@ function cursos() {//Cria cards para cada Curso que haja
 function DispTabelaAluno() {//Cria cards para cada Curso que haja
 
     var disp = document.querySelectorAll('[id=DisciplinaAlu]');//Vai buscar todos os elementos com o id=Disciplina
+    alert(disp.length);
+
     var card = document.getElementById("cardTabelas");
     for (var i = 0; i < disp.length; i++) {
         //Percorre todos os elementos que tenham como id=Disciplina
